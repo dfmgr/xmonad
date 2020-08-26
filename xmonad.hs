@@ -148,7 +148,7 @@ myKeys =
     -- Xmonad
         [ ("M-C-r", spawn "xmonad --recompile")      -- Recompiles xmonad
         , ("M-S-r", spawn "xmonad --restart")        -- Restarts xmonad
-        , ("M-S-<Esc>", io exitSuccess)                  -- Quits xmonad
+        , ("M-S-<Esc>", io exitSuccess)              -- Quits xmonad
 
     -- Windows
         , ("M-S-c", kill1)                           -- Kill the currently focused client
