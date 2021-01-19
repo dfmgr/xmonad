@@ -155,6 +155,7 @@ failexitcode
 
 # Plugins
 
+if __am_i_online; then
 if [ "$PLUGNAMES" != "" ]; then
   if [ -d "$PLUGDIR"/PLUREP/.git ]; then
     execute \
@@ -166,6 +167,7 @@ if [ "$PLUGNAMES" != "" ]; then
       "Installing plugin PLUGREP"
   fi
 fi
+fi
 
 # exit on fail
 failexitcode
@@ -176,8 +178,8 @@ failexitcode
 
 run_postinst() {
   dfmgr_run_post
-  backupapp "$HOME/.xmonad" "$APPNAME"
-  ln -sf $APPDIR $HOME/.xmonad
+  [ -d "$HOME/.xmonad" ] && backupapp "$HOME/.xmonad" "$APPNAME"
+  ln -sf "$APPDIR" "$HOME/.xmonad"
 }
 
 execute \
