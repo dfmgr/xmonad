@@ -74,6 +74,10 @@ myTerminal      = "myterminal"      -- Sets default terminal
 myBrowser       = "mybrowser"      -- Sets default browser
 myMailcli       = "myemail"      -- Sets default email
 myTextEditor    = "myeditor"     -- Sets default text editor
+MyFileManager   = "myfilemanager" -- Sets default file manager
+MyVideos        = "videos"        -- Sets Videos App
+MyMusic         = "music"         -- Sets Music App
+MyImages        = "images"        -- Sets Images App
 myBorderWidth   = 1         -- Sets border width for windows
 windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
 
@@ -161,12 +165,12 @@ myKeys =
 
     -- Grid Select
         , (("M-S-t"), spawnSelected'
-          [ ("Videos", "vlc")
-          , ("Music", "music")
+          [ ("Videos", "MyVideos")
+          , ("Music", "MyMusic")
           , ("Editor", "myTextEditor")
           , ("Email", "myMailcli")
-          , ("Gimp", "gimp")
-          , ("File Manager", "thunar")
+          , ("Gimp", "MyImages")
+          , ("File Manager", "MyFileManager")
           , ("Terminal", "myTerminal")
           , ("Browser",    "myBrowser")
           ])
