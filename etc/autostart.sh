@@ -187,7 +187,7 @@ fi
 # Wallpaper manager
 if __cmd_exist randomwallpaper; then
   __kill randomwallpaper
-  __start randomwallpaper --bg
+  __start randomwallpaper --bg --start
 elif __cmd_exist variety; then
   __kill variety
   __start variety
