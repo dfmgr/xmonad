@@ -95,7 +95,7 @@ fi
 
 if __cmd_exist sxhkd; then
   __kill sxhkd
-  __start sxhkd -c "$HOME/.config/sxhkd/sxhkdrc"
+  __start sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" -s "$HOME/.cache/sxhkd"
 fi
 
 if __cmd_exist setxkbmap; then
