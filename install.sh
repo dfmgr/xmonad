@@ -78,7 +78,7 @@ show_optvars "$@"
 dfmgr_run_init
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # end with a space
-APP="$APPNAME xmobar ghc xfce4-about scrot htop xdo xfce4-terminal firefox "
+APP="$APPNAME xmobar ghc xfce4-about scrot htop xdo xfce4-terminal firefox lxappearance qt5ct "
 PERL=""
 PYTH=""
 PIPS=""
